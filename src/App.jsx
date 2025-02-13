@@ -1,0 +1,26 @@
+import React from 'react';
+import HeroSection from './components/Herosection';
+import WhyStudyMBBS from './components/WhyStudyMBBS';
+import TopCountries from './components/TopCountries';
+import AdmissionProcess from './components/AdmssionProcess';
+import LeadForm from './components/LeadForm';
+import Footer from './components/Footer';
+
+const App = () => {
+  return (
+    <div>
+<h1 className="text-3xl md:text-5xl font-bold text-gray-800 bg-gray-100 p-4 rounded-lg shadow-lg  ">
+  University Insights 🩺
+</h1>
+
+      <HeroSection />
+      <WhyStudyMBBS />
+      <TopCountries />
+      <AdmissionProcess />
+      <LeadForm />
+      <Footer/>
+    </div>
+  );
+};
+
+export default App;
