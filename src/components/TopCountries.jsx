@@ -4,7 +4,7 @@ const TopCountries = () => {
   const countries = ["Russia", "Uzbekistan", "Kazakhstan", "Philippines", "Georgia", "Kyrgyzstan", "Egypt"];
 
   return (
-    <section className="bg-white py-16 px-5">
+    <section className="bg-white py-16 px-5" id='countries'>
       <h2 className="text-3xl font-bold text-center mb-6">Top Countries for MBBS</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {countries.map((country, index) => (
