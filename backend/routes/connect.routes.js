@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import  addConnectedStudent from '../controllers/connect.controller.js';
+import  {addConnectedStudent,getAllConnectedStudents} from '../controllers/connect.controller.js';
 
 
 // import all controllers
@@ -9,7 +9,7 @@ const routes = new Router();
 
 // Add routes
 routes.post('/add-new-student', addConnectedStudent);
-// routes.post('/', SessionController.store);
+routes.get('/connected-student', getAllConnectedStudents);
 // routes.put('/', SessionController.store);
 // routes.delete('/', SessionController.store);
 

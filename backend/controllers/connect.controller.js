@@ -37,4 +37,30 @@ const addConnectedStudent = async (req, res) => {
   }
 };
 
-export default addConnectedStudent;
+
+
+// Controller to return all connected students
+const getAllConnectedStudents = async (req, res) => {
+  try {
+    // Fetch all students from the collection
+    const students = await ConnectedStudent.find();
+
+    // Return the list of students
+    res.status(200).json({
+      message: 'Connected students retrieved successfully',
+      students,
+    });
+  } catch (error) {
+    console.error('Error fetching connected students:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
+export  {
+    getAllConnectedStudents,
+    addConnectedStudent
+} ;
+    
+
+
+
