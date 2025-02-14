@@ -24,7 +24,7 @@ const LeadForm = () => {
         setMessage('Failed to submit the form. Please try again.');
       }
     } catch (error) {
-      setMessage('An error occurred. Please try again later.');
+      setMessage('This email is already in use. Please try a different one.');
       console.error('Error submitting form:', error);
     }
   };
